@@ -21,26 +21,16 @@ body{
     padding: 0;
     font-size: 16px;
     width: 100%;
+    background-color: gray;
 }
-
-main{
-    width: 100%;
-}
-
-section{
-    width: 100%;
-}
-
-footer{
-    width: 100%;
-}
-
 .container{
     width: 1200px;
+    height: 1000px;
     margin: 0 auto;
     padding: 0 auto;
+    background-color: honeydew;
+    
 }
-
 /* Navigation styles */
 .headerNav{
     background-color: var(--forthColor);
@@ -54,6 +44,7 @@ footer{
     top: 0;
     padding: 10px 0px;
     z-index: 100;
+    opacity: 0.7;
 }
 
 .logo{
