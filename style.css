@@ -29,8 +29,7 @@ body{
     width: 1200px;
     height: 1000px;
     margin: 0 auto;
-    padding: 0 auto;
-    background-color: honeydew;
+    padding-top: 55px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -38,7 +37,7 @@ body{
 } 
 .containerContact{
     width: 1200px;
-    height: 1000px;
+    height: 500px;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
@@ -106,22 +105,9 @@ div.functions{
     opacity: 0.7;
 }
 
-.logo{
-    height: 40px;
-    padding: 0px 20px;
-}
-
-.imgNav{
-    height: 50px;
-    width: auto;
-}
 img{
     max-width: 200px;
     max-height: 200px;
-}
-
-#imgBig{
-    display: none;
 }
 
 nav{
@@ -162,6 +148,29 @@ a{
 
 a:hover{
     color: var(--primaryColor);
+}
+
+/* footer styles */
+
+ 
+footer{
+    background-color: var(--forthColor);
+    color: var(--thirdColor);
+    font-family: var(--secondaryFont);
+    margin: 0;
+    padding: 5px 0;
+}
+
+.siteFooter{
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#containerFooter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 
