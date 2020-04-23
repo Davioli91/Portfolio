@@ -29,7 +29,16 @@ body{
     margin: 0 auto;
     padding: 0 auto;
     background-color: honeydew;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     
+}
+div.functions{
+
+    width: 32%;
+    height: 25%;
+    text-align: center;
 }
 /* Navigation styles */
 .headerNav{
@@ -72,6 +81,7 @@ nav{
     flex-direction: column;
     justify-content: center;
 }
+
 
 nav a{
     text-align: left;
