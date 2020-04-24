@@ -33,6 +33,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-color: black;
     
 } 
 .containerContact{
@@ -62,6 +63,10 @@ textarea {
     flex-flow: row wrap;
     border-radius: 8px;
     
+}
+.btn-grad:hover { 
+    background-position: left center;
+    cursor: pointer;
 }
 .btn-grad {
     width: 100px;
@@ -107,19 +112,13 @@ textarea {
     letter-spacing: .35em;
 }
 
-
-
-
-.btn-grad:hover { 
-    background-position: right center; 
-    cursor: pointer;
-}
-
 div.functions{
 
     width: 32%;
     height: 25%;
     text-align: center;
+    color: white;
+    letter-spacing: .20em;
 }
 /* Navigation styles */
 .headerNav{
