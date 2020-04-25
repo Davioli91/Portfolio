@@ -1,6 +1,6 @@
 /* General styles */
 :root{
-    --primaryColor: #28bb76;
+    --primaryColor: #9520c4;
     --secondaryColor: #427c5b;
     --thirdColor: #fff;
     --forthColor: #1a1a1a;
@@ -33,17 +33,26 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-color: black;
     
 } 
 .containerContact{
     width: 1200px;
-    height: 500px;
+    height: 800px;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
+}
+.containerAboutMe{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    
 }
 .formContact{
     width: 100%;
@@ -62,6 +71,10 @@ textarea {
     flex-flow: row wrap;
     border-radius: 8px;
     
+}
+.btn-grad:hover { 
+    background-position: left center;
+    cursor: pointer;
 }
 .btn-grad {
     width: 100px;
@@ -106,13 +119,9 @@ textarea {
     width: 100%;
     letter-spacing: .35em;
 }
-
-
-
-
-.btn-grad:hover { 
-    background-position: right center; 
-    cursor: pointer;
+.info {
+    font-size: 30px;
+    color: #fff;
 }
 
 div.functions{
@@ -120,6 +129,8 @@ div.functions{
     width: 32%;
     height: 25%;
     text-align: center;
+    color: white;
+    letter-spacing: .20em;
 }
 /* Navigation styles */
 .headerNav{
@@ -206,6 +217,10 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.button {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 
