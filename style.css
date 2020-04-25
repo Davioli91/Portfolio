@@ -1,6 +1,6 @@
 /* General styles */
 :root{
-    --primaryColor: #28bb76;
+    --primaryColor: #9520c4;
     --secondaryColor: #427c5b;
     --thirdColor: #fff;
     --forthColor: #1a1a1a;
@@ -38,13 +38,21 @@ body{
 } 
 .containerContact{
     width: 1200px;
-    height: 500px;
+    height: 800px;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
+}
+.containerAboutMe{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    
 }
 .formContact{
     width: 100%;
@@ -110,6 +118,10 @@ textarea {
     font-size: 50px;
     width: 100%;
     letter-spacing: .35em;
+}
+.info {
+    font-size: 30px;
+    color: #fff;
 }
 
 div.functions{
@@ -205,6 +217,10 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.button {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 
