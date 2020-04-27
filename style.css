@@ -105,6 +105,7 @@ nav{
     background-color: var(--thirdColor);
     margin: 5px;
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
 
@@ -269,6 +270,9 @@ footer{
     .burger{
         display: block;
         cursor: pointer;
+    }
+    .burger div{
+        opacity: 1;
     }
     .textInnerImg{
         font-size: 40px;
