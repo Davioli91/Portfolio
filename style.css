@@ -63,8 +63,10 @@ body{
     width: 100%;
 }
 #home {
-    background: url(https://i0.wp.com/www.poetrypotion.com/wp-content/uploads/2020/04/keyboard-5017973_1920.jpg?resize=1024%2C666) no-repeat center;
+    background: url(https://pixnio.com/free-images/2019/01/15/2019-01-15-10-06-49-1200x798.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     min-height: 1000px;
@@ -130,9 +132,9 @@ body{
     filter: blur(30px);
 }
 .box:after {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    }
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 12%, #ffffff 50%, #000000 100%);
+}    
 .box .content{
     position:absolute;
     bottom: 0;
@@ -150,6 +152,7 @@ body{
 .box:hover .content{
     opacity: 1;
 }
+
 .box .content h2{
     font-size: 20px;
     color: #fff;
