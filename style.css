@@ -20,21 +20,24 @@ html{
 }
 
 body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .container{
     width: 100vw;
     height: 100vh;
+    max-height: 800px;
     margin: 0 auto;
     padding-top: 55px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
     
 } 
 .containerContact{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    max-height: 550px;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
@@ -49,8 +52,15 @@ body{
     width: 70px;
     height: 70px;
     display: flex;
-    margin: 10px auto;
+    padding-top: 10px;
+    margin: 10px 10px;
     flex-direction: column;
+}
+.buttonGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 #home {
     background: url(https://i0.wp.com/www.poetrypotion.com/wp-content/uploads/2020/04/keyboard-5017973_1920.jpg?resize=1024%2C666) no-repeat center;
@@ -155,18 +165,22 @@ body{
     letter-spacing: 1px;
 }
 .textAboutMe{
-    color: #fff;
+    color: black;
     text-align: center;
-    font-size: 8vh;
+    font-size: 80px;
     letter-spacing: 0.15em;
     margin-top: 65px;
+    width: 100%;
+}
+.textTechnology{
+    font-size: 80px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.15em;
 }
 .formContact{
     width: 100vw;
-}
-.textContact{
-    color: blanchedalmond;
-    margin: 0 auto;
 }
 
 /* Nav css */
@@ -182,11 +196,11 @@ nav{
     top: 0;
     z-index: 1;
 }
-.logo{
-    color: var(--thirdColor);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 20px;
+.logo img{
+    max-width: 200px;
+    max-height: 50px;
+    padding-top: 10px;
+    right: 0;
 }
 .nav-links{
     display: flex;
@@ -289,6 +303,19 @@ textarea {
     transform: translateY(-20%);
     transition: transform 1.5s ease-in-out;
 } 
+.textContact{
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+    letter-spacing: .15em;
+}
+.textContactLi{
+    font-size: 20px;
+    color: black;
+    max-height: 30px;
+    margin: 0 10px;
+}
 .info {
     font-size: 30px;
     color: #fff;
@@ -360,6 +387,12 @@ footer{
     }
     .textInnerImgName{
         font-size: 45px;
+    }
+    .container{
+        max-height: 1500px;
+    }
+    .textTechnology{
+        font-size: 50px;
     }
 }
 
