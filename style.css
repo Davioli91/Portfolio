@@ -9,8 +9,8 @@
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,22 +20,24 @@ html{
 }
 
 body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
-
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .container{
     width: 100vw;
     height: 100vh;
+    max-height: 800px;
     margin: 0 auto;
     padding-top: 55px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
     
 } 
 .containerContact{
     width: 100vw;
     height: 100vh;
+    max-height: 550px;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
@@ -49,16 +51,133 @@ body{
 .button{
     width: 70px;
     height: 70px;
-    display: block;
-    margin: 10px auto;
+    display: flex;
+    padding-top: 10px;
+    margin: 10px 10px;
+    flex-direction: column;
 }
-.containerAboutMe{
+.buttonGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+#home {
+    background: url(https://i0.wp.com/www.poetrypotion.com/wp-content/uploads/2020/04/keyboard-5017973_1920.jpg?resize=1024%2C666) no-repeat center;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
-    padding: 0 auto;
+    min-height: 1000px;
+}
+
+/* About Me Section */
+#aboutMe{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+    transition: 0.5s;
+    background: #060c21;
+
+}
+.box .imageBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.box .imageBx img{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.box:hover{
+    height: 400px;
+}
+.box:hover .imageBx img {
+    opacity: 1;
+}
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(30px);
+}
+.box:after {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    }
+.box .content{
+    position:absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box:hover .content{
+    opacity: 1;
+}
+.box .content h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.box .content h2 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.textAboutMe{
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.15em;
+    margin-top: 65px;
+    width: 100%;
+}
+.textTechnology{
+    font-size: 80px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.15em;
 }
 .formContact{
     width: 100vw;
@@ -77,11 +196,11 @@ nav{
     top: 0;
     z-index: 1;
 }
-.logo{
-    color: var(--thirdColor);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 20px;
+.logo img{
+    max-width: 200px;
+    max-height: 50px;
+    padding-top: 10px;
+    right: 0;
 }
 .nav-links{
     display: flex;
@@ -105,6 +224,7 @@ nav{
     background-color: var(--thirdColor);
     margin: 5px;
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
 
@@ -155,28 +275,51 @@ textarea {
 .heroImg{
     height: 100vh;
     width: 100vw;
+    max-height: 1000px;
+    min-width: 320px;
 }
-.textInnerImg{
+/* .infoImg{
     position: absolute;
+    right: 0;
+    color: blanchedalmond;
+    padding: 2vw;
+    border-bottom: 2px dashed #fff;
+} */
+.textInnerImg{
     color: white;
     text-align: center;
-    margin-top: -45%;
     font-size: 100px;
-    width: 100%;
+    padding-top: 120px;
     letter-spacing: .15em;
+    transform: translateY(20%);
+    transition: transform 1.5s ease-in-out;
 }
 .textInnerImgName{
-    position: absolute;
     color: white;
     text-align: center;
-    margin-top: -35%;
-    font-size: 50px;
-    width: 100%;
+    font-size: 38px;
+    padding-top: 200px;
     letter-spacing: .35em;
+    transform: translateY(-20%);
+    transition: transform 1.5s ease-in-out;
+} 
+.textContact{
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+    letter-spacing: .15em;
+}
+.textContactLi{
+    font-size: 20px;
+    color: black;
+    max-height: 30px;
+    margin: 0 10px;
 }
 .info {
     font-size: 30px;
     color: #fff;
+    padding: 10px;
 }
 
 div.functions{
@@ -239,9 +382,21 @@ footer{
     .nav-links{
         width: 60%;
     }
+    .textInnerImg{
+        font-size: 70px;
+    }
+    .textInnerImgName{
+        font-size: 45px;
+    }
+    .container{
+        max-height: 1500px;
+    }
+    .textTechnology{
+        font-size: 50px;
+    }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:700px){
   
     .nav-links{
         position: absolute;
@@ -255,6 +410,12 @@ footer{
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+    }
+    .textInnerImg{
+        font-size: 50px;
+    }
+    .textInnerImgName{
+        font-size: 35px;
     }
     .nav-links a{
         color: var(--forthColor);
@@ -270,13 +431,8 @@ footer{
         display: block;
         cursor: pointer;
     }
-    .textInnerImg{
-        font-size: 40px;
-        margin-top: -150%;
-    }
-    .textInnerImgName{
-        font-size: 30px;
-        margin-top: -100%;
+    .burger div{
+        opacity: 1;
     }
     .container{
         height: 300vh;
@@ -315,3 +471,4 @@ footer{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
