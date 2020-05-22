@@ -7,6 +7,8 @@
     <title>Dawid Domański Front-end Developer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="image/LogoMakr_6v1c4k.png" sizes="20x20" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 
 </head>
@@ -86,27 +88,27 @@
     <section id="technology">
         <div class="container">
             <h1 class=textTechnology>Technologie</h1>
-            <div class="functions">
+            <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-html-5 (1).svg" alt="HTML5">
                 <h3 class="functionsInfo">HTML 5</h3>
             </div>
-            <div class="functions">
-                <img class="imageFunctions" src="image/icons8-css3 (4).svg" alt="CSS3">
+            <div class="functions" data-aos="fade-up">
+                <img class="imageFunctions"  src="image/icons8-css3 (4).svg" alt="CSS3">
                 <h3 class="functionsInfo">CSS 3</h3>
             </div>
-            <div class="functions">
+            <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-javascript-logo.svg" alt="JavaScript">
                 <h3 class="functionsInfo">JavaScript</h3>
             </div>
-            <div class="functions">
+            <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-react-native.svg" alt="React">
                 <h3 class="functionsInfo">React</h3>
             </div>
-            <div class="functions">
+            <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-redux.svg" alt="Redux">
                 <h3 class="functionsInfo">Redux</h3>
             </div>
-            <div class="functions">
+            <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-github.svg" alt="git">
                 <h3 class="functionsInfo">Git</h3>
             </div>
@@ -127,10 +129,10 @@
             <p class="textContactLi">Możesz napisać również do mnie wiadomość, bądź odwiedzić mnie na Linkedin oraz GitHub</p>
                 <div class="buttonGroup">
                     <a href="https://www.linkedin.com/in/dawid-domański-6235b4132" target="_blank">
-                        <img class="button" src="./image/icons8-linkedin.svg" alt="linkedin dawid">
+                        <img data-aos="fade-right" class="button" src="./image/icons8-linkedin.svg" alt="linkedin dawid">
                     </a>
                     <a href="https://github.com/Davioli91" target=blank>
-                        <img class="button" src="./image/icons8-github (2).svg" alt="Github dawid">
+                        <img data-aos="fade-left" class="button" src="./image/icons8-github (2).svg" alt="Github dawid">
                     </a>
     
                 </div>
@@ -145,6 +147,10 @@
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
