@@ -183,7 +183,7 @@ body{
     letter-spacing: 0.15em;
 }
 .formContact{
-    width: 100vw;
+    width: 150vw;
 }
 
 /* Nav css */
@@ -438,7 +438,7 @@ footer{
         opacity: 1;
     }
     .container{
-        height: 300vh;
+        height: 400vh;
     }
     div.functions{
         width: 60%;
