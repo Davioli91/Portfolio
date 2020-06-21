@@ -21,8 +21,7 @@
         <ul class="nav-links">
             <li><a href="#home">Strona główna</a></li>
             <li><a href="#aboutMe">O mnie</a></li>
-            <li><a href="#project">Projekty</a></li>
-            <li><a href="#technology">Technologie</a></li>
+            <li><a href="#technology">Technologie/Projekty</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
         <div class="burger">
@@ -35,59 +34,27 @@
 </header>
 
 <body>
-    <section id="home">
-        <div class="row">
+    <section id="home" data-aos="fade-up">
+        <div class="row" data-aos="fade-up">
             <div class="banner">
                 <span class="infoImg">
-                    <p class="textInnerImg">Front-end Developer</p>
-                    <h1 class="textInnerImgName">DAWID DOMAŃSKI</h1>
+                    <p class="textInnerImg" data-aos="fade-down">Front-end Developer</p>
+                    <h1 class="textInnerImgName" data-aos="fade-down">DAWID DOMAŃSKI</h1>
                 </span>
             </div>
         </div>
     </section>
     <section id="aboutMe">
-        <h1 class=textAboutMe>O mnie</h1>
-        <div class="box">
-            <div class="imageBx">
-                <img src="image/podroze.jpg" alt="Dawid Domański">
-            </div>
-            <div class="content">
-                <h2>Cześć<br><span>Mam na imię Dawid, własnie jesteś na mojej stronie, projektowanie stron to moje nowe hobby</span>
-                </h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imageBx">
-                <img src="image/dawid2.jpg" alt="Dawid Domański">
-            </div>
-            <div class="content">
-                <h2>Programowanie<br><span>Od ponad 6 miesięcy uczę się programować, skończyłem kurs Junior Front-end Developer</span>
-                </h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imageBx">
-                <img src="image/podroze.jpg" alt="Dawid Domański">
-            </div>
-            <div class="content">
-                <h2>Podróże<br><span>Jak jest tylko możliwość odpoczynku, to chętnie wraz z żoną jedziemy na zasłużony urlop</span>
-                </h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imageBx">
-                <img src="image/podroze.jpg" alt="Dawid Domański">
-            </div>
-            <div class="content">
-                <h2>Piłka nożna<br><span>Jestem również trenerem nieokiełznanych 7 latków w piłkę nożna</span>
-                </h2>
-            </div>
-        </div>
+        <h1 class=textAboutMe data-aos="fade-up">O mnie</h1>
+        <p class=textAboutMeDescripions data-aos="fade-up">Cześć, nazywam się Dawid Domański, programowanie to moja nowa pasja. Ukończyłem kurs dzienny
+            Junior Front-end Developer, aktualnie zajmuje się dodatkowo projektem Open Source Kolektyw Futbolu</p>
+           
+    
     </section>
 
     <section id="technology">
         <div class="container">
-            <h1 class=textTechnology>Technologie</h1>
+            <h1 class=textTechnology data-aos="fade-up">Technologie</h1>
             <div class="functions" data-aos="fade-up">
                 <img class="imageFunctions" src="image/icons8-html-5 (1).svg" alt="HTML5">
                 <h3 class="functionsInfo">HTML 5</h3>
@@ -115,9 +82,9 @@
         </div>
     </section>
     <section id="contact">
-        <h1 class=textContact>Kontakt</h1>
+        <h1 class=textContact data-aos="fade-up">Kontakt</h1>
         <div class="containerContact">
-            <form method="Post" class="formContact" data-email="domanskidawid91@gmail.com" 
+            <form method="POST" class="formContact" data-email="domanskidawid91@gmail.com" 
             action="https://script.google.com/macros/s/AKfycbzpxQSg5r_RyHuXYnfrPFO1QZvZ70uaDimZN7F7JQ/exec">
                 <input class="textInput" type="text" name="text" id="text" placeholder="Imię" required>
                 <input class="textInput" type="email" name="email" id="email" placeholder="Podaj swój adres e-mail"
