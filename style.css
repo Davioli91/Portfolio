@@ -103,7 +103,7 @@ body{
     color: white;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 200px;
+    padding: 0 5px 200px;
 }
 .textTechnology{
     font-size: 80px;
@@ -327,6 +327,9 @@ footer{
 @media screen and (max-width:700px){
     #aboutMe{
         height: 150vh;
+    }
+    .textAboutMe{
+        font-size: 60px;
     }
     .textAboutMeDescripions{
         font-size: 35px;
