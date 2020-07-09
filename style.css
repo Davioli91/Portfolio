@@ -86,7 +86,8 @@ body{
     background-attachment: fixed;
     width: 100%;
     opacity: 0.9;
-    height: 100vh;
+    height: 70vh;
+    min-height: 850px;
 }
 .aboutDiv{
     width: 50%;
@@ -101,8 +102,8 @@ body{
 .textAboutMeDescripions{
     color: white;
     text-align: center;
-    font-size: 50px;
-    padding-bottom: 500px;
+    font-size: 40px;
+    padding-bottom: 200px;
 }
 .textTechnology{
     font-size: 80px;
@@ -298,6 +299,12 @@ footer{
     max-width: 200px;
     max-height: 200px;
 }
+#aboutMe{
+    height: 100vh;
+}
+.textAboutMeDescripions{
+    font-size: 60px;
+}
 
 @media screen and (max-width:1024px){
     .nav-links{
@@ -318,6 +325,12 @@ footer{
 }
 
 @media screen and (max-width:700px){
+    #aboutMe{
+        height: 150vh;
+    }
+    .textAboutMeDescripions{
+        font-size: 35px;
+    }
   
     .nav-links{
         position: absolute;
